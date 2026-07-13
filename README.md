@@ -1,13 +1,15 @@
 # 🧭 Project Compass
 
-     N
-     ↑
-W ← 🧭 → E
-     ↓
-     S
+```text
+      N
+      ↑
+W ←  🧭  → E
+      ↓
+      S
+```
 
-> Build useful tools.
-> Learn continuously.
+> Build useful tools.  
+> Learn continuously.  
 > Create opportunities.
 
 ## Overview
