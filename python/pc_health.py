@@ -1,13 +1,17 @@
 import platform
 import psutil
+from datetime import datetime
 
 def print_section(title):
     print()
     print(title)
 
+now = datetime.now()
+
 print("=" * 40)
 print("Project Compass")
 print("PC Health Checker")
+print(f"Scan Time : {now.strftime('%Y/%m/%d %H:%M:%S')}")
 print("=" * 40)
 
 print_section("OS Information:")
@@ -17,7 +21,8 @@ print(platform.version())     # 詳細バージョン
 print_section("CPU Information:")
 print(platform.machine())     # CPUアーキテクチャ
 print(platform.processor())   # CPU情報
-print(f"CPU使用率: {psutil.cpu_percent(interval=1)}%")
+cpu = psutil.cpu_percent(interval=1)
+print(f"CPU使用率: {cpu}%")
 
 print_section("Memory Information:")
 memory = psutil.virtual_memory()
